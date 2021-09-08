@@ -1,0 +1,26 @@
+.guides{
+    h2{
+        padding-bottom: $pd-4;
+        @include styleTextWithLineHeight($color-black-0,$fs-5,$fw-2,$lh-0);
+    }
+    .guides__item a{
+        text-decoration: none;
+        img{
+            margin-bottom: 16px;
+            border-radius:  4px;
+            width: 100%;
+            &:hover{
+                opacity: 0.85;
+            }
+        }
+        h6{
+            padding: 0 0 2px;
+            @include styleTextWithLineHeight($color-black-0,$fs-0,$fw-2,1.2);
+        }
+        p{
+            color: $color-black-0;
+            font-size: $fs-0;
+        }
+    }
+
+}

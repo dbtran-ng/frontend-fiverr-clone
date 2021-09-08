@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: $fs-1;
+    line-height: $line-height-0;
+    color: $color-black-0;
+    background-color: $color-white-0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: $fw-2;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 0;
+}
+
+.max-width-container{
+    max-width: 1400px;
+    margin: 0 144px $mg-5;
+    padding: 0 $pd-5;
+    @include responsive("large"){
+            margin: 0 20px;
+            padding: 32px 32px 64px;
+    }
+
+    @include responsive("medium"){
+            margin: 0;
+            padding: 32px 32px 64px;
+
+    }
+}
+.container{
+    @include responsive("large"){
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    @include responsive("medium"){
+        margin: 0 auto;
+    }
+
+}

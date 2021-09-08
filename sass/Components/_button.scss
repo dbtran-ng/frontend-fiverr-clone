@@ -1,0 +1,84 @@
+.button--green{
+    @include styleButton($color-white-0, $color-green-0, $color-green-0 ,$fs-0 - 2,$fw-2,$pd-0, $pd-3);
+    border-radius: 0 4px 4px 0;
+    &:hover{
+        @include hoverButton($color-white-0,$color-green-1,$color-white-0);
+    }
+}
+
+.button--join{
+    @include styleButton($color-white-0, transparent, $color-white-0 , $fs-0 - 2,$fw-2, $pd-0 - 2, $pd-3 - 2);
+    border-radius: 4px;
+    &:hover{
+        @include hoverButton($color-white-0,$color-green-1,$color-white-0);
+    }
+}
+
+.button--green-join{
+    @include styleButton($color-green-0, $color-white-0, $color-green-0 , $fs-0 - 2,$fw-2, $pd-0 - 2, $pd-3 - 2);
+    border-radius: 4px;
+    &:hover{
+        @include hoverButton($color-white-0,$color-green-1,$color-white-0);
+    }
+}
+.button--search{
+    @include styleButton($color-white-0,$color-green-0, transparent,$fs-1,$fw-1,$pd-2, $pd-4);
+    border-radius: 4px;
+    &:hover{
+        @include hoverButton($color-black-0,$color-green-1,$color-black-0);
+    }
+}
+
+.text--green{
+    color: $color-white-0;
+    background-color: $color-green-0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: $fs-1;
+    font-weight: $fw-1;
+    line-height: 100%;
+    text-align: center;
+    padding: $pd-2 $pd-4;
+    cursor: pointer;
+    white-space: nowrap;
+    &:hover{
+        text-decoration: none;
+        background: $color-green-3;
+        color: white;
+    }
+    @include responsive("large"){
+        padding: $pd-2 - 2 $pd-4 - 4;
+        font-size: $fs-1 - 2;
+        margin: 10px 0;
+    }
+
+    @include responsive("medium"){
+        padding: $pd-2 - 2 $pd-4 - 4;
+        font-size: $fs-1 - 2;
+    }
+}
+
+
+
+.text--blue{
+    display: inline-block;
+
+    color: $color-blue-2;
+    background-color: $color-white-0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: $fs-1;
+    font-weight: $fw-1;
+    line-height: 100%;
+    text-align: center;
+
+    text-decoration: none;
+    padding: $pd-2 $pd-4;
+    cursor: pointer;
+
+    &:hover{
+        text-decoration: none;
+        background: $color-blue-4;
+        color: $color-blue-3;
+    }
+}

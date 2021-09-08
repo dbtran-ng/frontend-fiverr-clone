@@ -1,0 +1,154 @@
+.grid-15 {
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 0 16px;
+    .col-3 {
+        flex: 0 0 20%;
+    }
+}
+#footer {
+    &::before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: $color-white;
+        display: block;
+    }
+
+    .footer {
+        padding-top: 64px;
+        margin-bottom: 2%;
+        .footer__top {
+            padding-bottom: 24px;
+            margin-bottom: 8px;
+            &::after {
+                content: "";
+                height: 1px;
+                width: 100%;
+                background-color: $color-white;
+                display: block;
+            }
+            .footer__sub {
+                padding: 0 16px;
+                h6 {
+                    @include styleTextWithLineHeight($color-black-0, $fs-1, $fw-2, 140%);
+                    padding-bottom: 16px;
+                }
+                ul {
+                    list-style: none;
+                    li {
+                        padding: 0 0 16px;
+                        a {
+                            text-decoration: none;
+                            color: $color-gray-2;
+                            font-size: $fs-0;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                            p {
+                                color: $color-gray-1;
+                                font-size: $fs-0 - 2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer__bottom {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            .footer-bottom__left {
+                padding: 16px 0 0;
+                display: flex;
+                img {
+                    width: 77px;
+                    height: 23px;
+                }
+                p {
+                    margin-left: 24px;
+                    @include styleTextWithLineHeight($color-gray-1, $fs-0, $fw-4, 21px);
+                }
+            }
+            .footer-bottom__right {
+                display: flex;
+                width: auto;
+                justify-content: space-between;
+                padding-top: 16px;
+                align-items: center;
+                .social {
+                    width: auto;
+                    text-align: center;
+                    align-items: center;
+                    display: flex;
+                    justify-content: flex-start;
+                    list-style: none;
+                    margin-bottom: 0px;
+                    li {
+                        margin-right: 32px;
+                        a{
+                            &:hover{
+                                padding: 8px;
+                                margin: -8px;
+                                color: $color-black-0;
+                                background-color: #efeff0;
+                                border-radius: 50%;  
+                                transition: background-color 0.2s;
+                            }
+                            
+                        }
+
+                    }
+
+                    
+                }
+                .settings {
+                    display: flex;
+                    button {
+                        margin-right: 4px;
+                        padding: $pd-0 + 1 $pd-2;
+                        background: none;
+                        border: none;
+                        white-space: nowrap;
+                        @include styleTextWithLineHeight($color-gray-2, $fs-0, $fw-1, 21px);
+                        img {
+                            padding-right: 8px;
+                        }
+
+                        &:hover {
+                            color: $color-black-0;
+                            background-color: $color-white-2;
+                            border-radius: 54px;
+                        }
+                    }
+                    .icon {
+                        margin-left: 5px;
+                        width: 32px;
+                        height: 32px;
+                        svg {
+                            fill: $color-gray-2;
+                            .circle-wrapper {
+                                stroke: $color-gray-2;
+                            }
+                            &:hover {
+                                circle {
+                                    fill: $color-white;
+                                }
+                                path {
+                                    fill: $color-black-0;
+                                }
+                            }
+                        }
+                        &:hover {
+                            fill: $color-red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

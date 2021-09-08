@@ -1,0 +1,58 @@
+.signup{
+    padding: 0 32px;
+    margin-bottom: 96px;
+    .signup__banner{
+        background-image: url('https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1400,dpr_1.0/v1/attachments/generic_asset/asset/50218c41d277f7d85feeaf3efb4549bd-1599072608122/bg-signup-1400-x1.png');
+        border-radius: 4px;
+        @extend %backgroundImg;
+        width: 100%;
+        .signup__text{
+            padding: 120px 96px;
+            h2{
+                max-width: 650px;
+                margin-bottom: 8px;
+                padding-bottom: $pd-6 + 4;
+                @include styleTextWithLineHeight($color-white-0,$fs-6,$fw-2,56px);
+                i{
+                    font-weight: 500;
+                }
+            }
+        }
+        .signup__img{
+            align-items: center;
+            justify-content: flex-end;
+            display: block;
+            position:absolute;  
+        }
+    }
+
+    @include responsive("large"){
+        .signup__banner{
+            .signup__text{
+                padding: 50px 26px;
+                h2{
+                    max-width: 400px;
+                    @include styleTextWithLineHeight($color-white-0,$fs-4,$fw-2,40px);
+                }
+            }
+        }
+    }
+
+    @include responsive("medium"){
+        margin-bottom: 60px;
+        .signup__banner{
+            overflow: hidden;
+            background-color: #45091b;
+            background-image: none;
+            .signup__text{
+                padding: 52px 36px;
+                width: 100%;
+                h2{
+                    max-width: 500px;
+                    padding-bottom: 30px;
+                    @include styleTextWithLineHeight($color-white-0,$fs-5 ,$fw-2,40px);
+                }
+            }
+        }
+    }
+}

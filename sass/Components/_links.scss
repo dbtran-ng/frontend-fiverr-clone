@@ -1,0 +1,29 @@
+.madeby{
+    position: relative;
+    .see-more-links{
+        position: absolute;
+        top: 90px;
+        right: 32px;
+        padding-top: 16px;
+        text-decoration: none;
+    }
+
+    @include responsive("extra-large"){
+        .see-more-links{
+            top: 85px;
+            right: 20px;
+
+        }
+    }
+}
+
+.guides{
+    position: relative;
+    .see-more-guides{
+        position: absolute;
+        top: 0px;
+        right: 32px;
+        padding-top: 16px;
+        text-decoration: none;
+    }
+}

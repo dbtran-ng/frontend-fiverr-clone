@@ -1,0 +1,14 @@
+.services{
+    padding: $mg-3 0;
+    .services__content{
+        width: 80%;
+        margin: 0 auto;
+        h2{
+            padding-bottom: $pd-4 + 4;
+            font-size: $fs-5;
+            line-height: 120%;
+            font-weight: $fw-2;
+            color: $color-black-0;
+        }
+    }
+}
